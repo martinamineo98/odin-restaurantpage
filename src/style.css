@@ -1,0 +1,231 @@
+
+/* -------------------------------------------------------- VARIABLES */
+
+:root {
+	--sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+	--serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	--main-bg-color: #FFFFFF;
+	--main-font-color: #000000;
+	--main-font-family: var(--sans-serif);
+	--alternative-font-family: var(--serif);
+	--nav-li-bg-color: hsl(0deg, 0%, 95%);
+	--nav-li-active-bg-color: hsl(0deg, 80%, 30%);
+}
+
+/* ------------------------------------------------------------ RESET */
+
+*,
+*::before,
+*::after {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 10px;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ---------------------------------------------------------- GENERAL */
+
+body {
+	background-color: var(--main-bg-color);
+	color: var(--main-font-color);
+	display: flex;
+	font: calc(1.6rem + .5vmin) var(--main-font-family);
+	place-content: center;
+}
+
+a:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #800080;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+	text-decoration-skip-ink: auto;
+}
+
+a:active {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+th {
+	background-color: hsl(0deg, 0%, 95%);
+	padding: 15px;
+}
+
+td {
+	background-color: hsl(0deg, 0%, 99%);
+	border: 15px solid #FFFFFF;
+	padding: 15px;
+}
+
+td li {
+	margin-left: 25px;
+}
+
+td li:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+/* -------------------------------------------------------- CONTAINER */
+
+#content {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	min-height: 100vh;
+	padding: 4ch;
+	place-content: center;
+	place-items: center;
+	width: calc(72ch + 4ch)
+}
+
+#content > * {
+	width: 100%;
+}
+
+/* -------------------------------------------------------------- NAV */
+
+.nav {
+	font-family: var(--alternative-font-family);
+}
+
+.nav ul {
+	display: grid;
+	gap: 15px;
+	grid-template-columns: repeat(3, 1fr);
+	list-style: none;
+	place-content: center;
+	text-align: center;
+}
+
+.nav li {
+	padding: 7.5px 15px;
+}
+
+.nav li.isActive a {
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.nav li.isActive a:hover,
+.nav li.isActive a:focus {
+	text-decoration: underline;
+	text-decoration-skip-ink: auto;
+}
+
+.nav a {
+	color: #000000;
+	text-decoration: underline;
+	text-decoration-skip-ink: auto;
+}
+
+.nav a:hover,
+.nav a:focus {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* ----------------------------------------------------------- HEADER */
+
+.header {
+	display: flex;
+	font-family: var(--alternative-font-family);
+	gap: 15px;
+	height: 50vh;
+	place-content: center;
+	place-items: center;
+	position: relative;
+}
+
+.header img {
+	max-height: 70%;
+	width: auto;
+}
+
+.header p {
+	position: absolute;
+	margin-left: 36ch;
+	margin-top: 6ch;
+}
+
+/* ------------------------------------------------- DECORATIVE BOXES */
+
+.header-box {
+	aspect-ratio: 1;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	height: 75%;
+	mix-blend-mode: difference;
+	position: absolute;
+}
+
+/* ------------------------------------------------------------- MAIN */
+/* --> This turns the footer into a sticky footer. 										*/
+
+.main {
+	font-family: var(--alternative-font-family);
+	flex: 1;
+}
+
+.main > div:not(.isActive) {
+	display: none;
+}
+
+[class*='block-'] {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.home-special {
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.contact-details {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.contact-details > div {
+	background-color: hsl(0deg, 0%, 99%);
+	padding: 15px;
+}
+
+/* ----------------------------------------------------------- FOOTER */
+
+.footer {
+	font-size: .6em;
+	text-align: center;
+	text-transform: uppercase;
+}
