@@ -1,0 +1,77 @@
+
+{
+	
+	'dishes': {
+		
+		'side dishes': [
+			{
+				'name': 'name of side dish',
+				'price': 10
+			},
+			{
+				'name': 'name of side dish',
+				'price': 15
+			},
+			{
+				'name': 'name of side dish',
+				'price': 20
+			},
+			{
+				'name': 'name of side dish',
+				'price': 25
+			},
+			{
+				'name': 'name of side dish',
+				'price': 30
+			},
+		],
+		
+		'main dishes': [
+			{
+				'name': 'name of main dish',
+				'price': 10
+			},
+			{
+				'name': 'name of main dish',
+				'price': 15
+			},
+			{
+				'name': 'name of main dish',
+				'price': 20
+			},
+			{
+				'name': 'name of main dish',
+				'price': 25
+			},
+			{
+				'name': 'name of main dish',
+				'price': 30
+			},
+		],
+		
+		'drinks': [
+			{
+				'name': 'name of drink',
+				'price': 10
+			},
+			{
+				'name': 'name of drink',
+				'price': 15
+			},
+			{
+				'name': 'name of drink',
+				'price': 20
+			},
+			{
+				'name': 'name of drink',
+				'price': 25
+			},
+			{
+				'name': 'name of drink',
+				'price': 30
+			},
+		]
+		
+	}
+	
+}
